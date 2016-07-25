@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Guess the Word : A discord bot built using discord.py library.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Guess the Word</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/cameronleong/guesstheword">View on GitHub</a>
+
+          <h1 id="project_title">Guess the Word</h1>
+          <h2 id="project_tagline">A discord bot built using discord.py library.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/cameronleong/guesstheword/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/cameronleong/guesstheword/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="guess-the-word-discord-bot" class="anchor" href="#guess-the-word-discord-bot" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Guess the Word Discord Bot</h1>
+
+<p>Discord bot built using discord.py library.</p>
+
+<h1>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h1>
+
+<p>-Python 3.5</p>
+
+<p>-pip<br>
+<a href="https://pip.pypa.io/en/stable/installing">https://pip.pypa.io/en/stable/installing</a></p>
+
+<p>-discord.py<br>
+<a href="https://github.com/Rapptz/discord.py">https://github.com/Rapptz/discord.py</a><br>
+<code>python3 -pip install -U discord.py</code>  </p>
+
+<h1>
+<a id="help" class="anchor" href="#help" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Help</h1>
+
+<p>The objective of this game is to guess a randomly chosen word by narrowing it down between two alphabetically-sorted bounds. The bounds always start from the first and last words in the bot's dictionary: <strong>aardvark</strong> and <strong>zygote</strong>.</p>
+
+<p>For instance, if the word chosen is <strong>credible</strong> then typing in <strong>cat</strong> will prompt the bot to respond with  </p>
+
+<p><code>Guess the word between **cat** and **zygote**</code>  </p>
+
+<p>since credible is between cat and zygote (but not aardvark and cat). Following that logic, typing in <strong>dog</strong> will prompt the response</p>
+
+<p><code>Guess the word between **cat** and **dog**</code>. </p>
+
+<p>Take note that alphabetical order means that words like "catastrophe" and "dane" are valid words that are between <strong>cat</strong> and <strong>dog</strong> while words like "cab" aren't (both cata... and d... are after cat but cab is before c-a-t).</p>
+
+<p><strong>Commands</strong><br>
+<code>!word</code> - Starts a game of Guess the Word<br>
+<code>!help</code> - Displays this page<br>
+<code>!abc</code>  - Lists the english alphabet for your convenience<br>
+<code>!hint</code> - Reveals first three letters once there are less than 200 words left<br>
+<code>!stop</code> - Stops an ongoing game<br>
+<code>!score</code> - Displays the top five players  </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Guess the Word maintained by <a href="https://github.com/cameronleong">cameronleong</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
